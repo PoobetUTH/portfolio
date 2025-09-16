@@ -1,0 +1,44 @@
+.navbar a{
+    position: relative;
+    transition: color 0.2s;
+}
+
+.navbar a:hover{
+    color: #2563eb;
+}
+
+.menu-toggle{
+    
+    justify-content: center;
+    gap: 6px;
+}
+
+.menu-toggle .bar{
+    width: 26px;
+    height: 2px;
+    background: #ffffff;
+    border-radius: 9999px;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.menu-toggle.open .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.open .bar:nth-child(2){
+    opacity: 0;
+}
+
+.menu-toggle.open .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+html { scroll-behavior: smooth; }
+
+#contact a{
+    transition: color 0.2s;
+}
+
+#contact a:hover{
+    color:#6366f1;
+}

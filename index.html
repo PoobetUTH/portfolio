@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Poobet</title>
+    <meta name="description" content="เว็บไซต์ Portfolioของนายภูเบศ">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body id="top" class="bg-gray-900 text-gray-200">
+    <!-- Navbar -->
+    <header class="navbar sticky top-0 z-50 bg-gray-800/90 backdrop-blur border-b border-gray-700">
+        <div class="container mx-auto px-2 py-3 flex items-center justify-between">
+           <a href="#top" class="navhead text-lg font-bold">My Portfolio</a>
+
+            <!-- Hamburger -->
+            <button class="menu-toggle md:hidden p-2 flex flex-col justify-center gap-1.5" aria-label="Toggle menu" aria-expanded="false"
+                aria-controls="mobile-panel">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <!-- Desktopmenu -->
+            <nav id="primary-menu" class="menu hidden md:flex gap-6 font-medium">
+                <a href="#top">Home</a>
+                <a href="#skill">Skills</a>
+                <a href="#project">Project</a>
+                <a href="#certificate">Certificate</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+
+        <!-- Mobilemenu -->
+        <div id="mobile-panel" class="md:hidden hidden border-t bg-white/95">
+            <nav class="container mx-auto px-4 py-3 flex flex-col gap-3">
+                <a href="#top" class="text-black">Home</a>
+                <a href="#skill" class="text-black">Skills</a>
+                <a href="#project" class="text-black">Project</a>
+                <a href="#certificate" class="text-black">Certificate</a>
+                <a href="#contact" class="text-black">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-2 py-6 space-y-24">
+        <div>
+            <h1 class="text-2xl font-bold text-center">Welcome to Poobet Portfolio</h1>
+                <p class="mt-2 text-gray-600 text-center text-base font-semibold">ยินดีต้อนรับเข้าสู่PortFolioของภูเบศ</p>
+        </div>
+        <!-- HOME -->
+        <section id="home"
+            class="flex flex-col md:flex-row items-center gap-6 bg-white shadow-lg border border-gray-300 rounded-xl p-6">
+            <img src="./image/ProfileFacebook.jpg" alt="PoobetProfile"
+                class="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-blue-600 object-cover">
+            <div>
+                <h2 class="text-xl font-semibold text-gray-900">About Me</h2>
+                <p class="mt-3 text-gray-700">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem,
+                    perspiciatis? Neque nulla quod similique commodi
+                    autem in quas doloremque, blanditiis, ut, modi harum consectetur. Laborum!
+                </p>
+            </div>
+        </section>
+
+        <!-- Skill -->
+        <section id="skill" class="scroll-mt-20 space-y-6">
+            <h2 class="text-2xl font-bold text-center">Skills</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                <div class="bg-white border border-gray-200 rounded-xl shadow p-4 text-center text-black">HTML</div>
+                <div class="bg-white border border-gray-200 rounded-xl shadow p-4 text-center text-black">CSS</div>
+                <div class="bg-white border border-gray-200 rounded-xl shadow p-4 text-center text-black">JavaScript</div>
+                <div class="bg-white border border-gray-200 rounded-xl shadow p-4 text-center text-black">Java</div>
+                <div class="bg-white border border-gray-200 rounded-xl shadow p-4 text-center text-black">C++</div>
+                <div class="bg-white border border-gray-200 rounded-xl shadow p-4 text-center text-black">SQL</div>
+            </div>
+        </section>
+
+        <!-- Project -->
+        <section id="project" class="scroll-mt-20 space-y-6">
+            <h2 class="text-2xl font-bold text-center">Project</h2>
+            <div class="grid md:grid-cols-2  gap-6">
+                <!-- Project-1 -->
+                <article class="bg-white border border-gray-200 rounded-xl shadow p-4">
+                    <img src="" alt="Project1" class="rounded-lg mb-3 object-cover w-full h-48">
+                    <h3 class="text-lg font-semibold text-black">Project name</h3>
+                    <p class="text-gray-600 text-sm mt-1 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </article>
+                <!-- Project-2 -->
+                <article class="bg-white border border-gray-200 rounded-xl shadow p-4">
+                    <img src="" alt="Project2" class="rounded-lg mb-3 object-cover w-full h-48">
+                    <h3 class="text-lg font-semibold text-black">Project name</h3>
+                </article>
+            </div>
+        </section>
+        
+        <!-- Certificate -->
+        <section id="certificate" class="scroll-mt-20 space-y-6">
+            <h2 class="text-2xl font-bold text-center">Certificate</h2>
+            <div class="grid gap-6">
+
+            <article class="bg-white border border-gray-200 rounded-xl shadow p-4">
+                <img src="" alt="Cer1" class="rounded-lg mb-3 object-cover w-full h-48">
+            </article>
+
+            <article class="bg-white border border-gray-200 rounded-xl shadow p-4">
+                <img src="" alt="Cer2" class="rounded-lg mb-3 object-cover w-full h-48">
+            </article>
+        </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="scroll-mt-20 space-y-6">
+            <h2 class="text-2xl font-bold text-center">Contact</h2>
+            <div class="max-w-xl mx-auto bg-white border border-gray-200 rounded-xl shadow p-6">
+                <p class="text-gray-700 text-center">
+                    Email : peapealol79@gmail.com <br>
+                    GitHub : <a href="https://github.com/PoobetUTH" target="_blank">github.com/PoobetUTH</a><br>
+                    Tel : 096-054-3602 <br>
+                    Facebook : <a href="https://www.facebook.com/poobet.uthansoot" target="_blank">facebook.com/poobet.uthansoot</a>
+                </p>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
